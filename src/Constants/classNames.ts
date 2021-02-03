@@ -44,7 +44,11 @@ export const FORM_BTN_CLASS = [
 ];
 
 export const DROPDOWN_CN = 'dropdown';
-export const DROPDOWN_BTN_CN = ['nav-link', 'dropdown-toggle'];
+export const DROPDOWN_BTN_CN = [
+  'nav-link',
+  `${DROPDOWN_CN}-toggle`,
+  `${DROPDOWN_CN}--btn`,
+];
 export const DROPDOWN_MENU_CN = `${DROPDOWN_CN}--menu`;
 export const DROPUP_MENU_CN = 'dropup--menu';
 export const DROPDOWN_ITEM_CN = `${DROPDOWN_CN}--item`;
