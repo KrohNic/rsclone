@@ -1,0 +1,67 @@
+.client-chat {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-height: 510px;
+  height: 75%;
+  @media screen and (max-width: 768px) {
+    height: 109px;
+    min-height: 59px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    min-height: 570px;
+  }
+
+  &__msg-block {
+    display: flex;
+    position: relative;
+    height: 22px;
+    width: 100%;
+    margin: 0 5px;
+    &-info {
+      display: flex;
+      left: 35px;
+      position: absolute;
+      &_sender {
+        font-weight: 600;
+        &::after {
+          content: ': ';
+        }
+      }
+      &_msg {
+        padding-left: 2px;
+        white-space: nowrap;
+      }
+    }
+
+    .msg-grade {
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      position: relative;
+    }
+    &_like {
+      background: url('../assets/images/like.png') no-repeat;
+      background-size: cover;
+    }
+    &_dislike {
+      background: url('../assets/images/dislike.png') no-repeat;
+      background-size: cover;
+    }
+    &_like-active {
+      background: url('../assets/images/like_active.png') no-repeat;
+      background-size: cover;
+    }
+    &_dislike-active {
+      background: url('../assets/images/dislike_active.png') no-repeat;
+      background-size: cover;
+    }
+
+    .no-active {
+      display: none;
+    }
+  }
+}

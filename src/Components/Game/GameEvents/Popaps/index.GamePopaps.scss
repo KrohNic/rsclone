@@ -1,0 +1,25 @@
+.end_game_popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+
+  &--block {
+    padding: 10px;
+    line-height: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 2px 4px 0px darkgrey;
+    text-align: center;
+  }
+
+  &--text {
+    @extend .primary_text;
+
+    font-weight: 400;
+    font-style: italic;
+  }
+}

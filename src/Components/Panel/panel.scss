@@ -1,0 +1,101 @@
+.panel {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  .active {
+    border: aqua solid 2px;
+  }
+  & button {
+    outline: none;
+  }
+  &__colors {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &-color {
+      width: 40%;
+      height: 45%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .black {
+      background-color: black;
+    }
+    .red {
+      background-color: red;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+  }
+  &__tools {
+    display: flex;
+    width: 220px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &_pencil {
+      display: flex;
+      width: 50%;
+      height: 45%;
+      justify-content: space-around;
+      align-items: center;
+      &-size {
+        border-radius: 50%;
+        background-color: black;
+        cursor: pointer;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      .six {
+        width: 30px;
+        height: 30px;
+      }
+      .three {
+        width: 20px;
+        height: 20px;
+      }
+      .one {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &_tool {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      height: 45%;
+      &-item {
+        width: 32%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.05);
+        }
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

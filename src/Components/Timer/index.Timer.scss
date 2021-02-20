@@ -1,0 +1,12 @@
+.timer {
+  width: 70px;
+  display: flex;
+  position: absolute;
+  pointer-events: none;
+
+  &_min {
+    &::after {
+      content: ':';
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  height: $header_h;
+  background-color: $color_bg_secondary;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--title {
+    margin-left: 1em;
+    color: $color_primary;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+  }
+
+  &--nav {
+    height: 100%;
+    display: flex;
+  }
+
+  &--lang_btn,
+  &--pages_btn {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $color_header_hover_bg;
+      cursor: pointer;
+    }
+  }
+
+  &--pages_btn {
+    width: 110px;
+    padding: 0 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: $footer_h;
+  background-color: $color_bg_secondary;
+
+  .wrapper {
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--authors {
+    width: 9em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--year {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  &--rs_logo {
+    width: fit-content;
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 100px;
+
+    &--title {
+      font-size: 14px;
+    }
+
+    &--nav {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+}

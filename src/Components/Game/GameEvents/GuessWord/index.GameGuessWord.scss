@@ -1,0 +1,9 @@
+.guess-word {
+  position: absolute;
+  margin: 0 0 0 2px;
+  pointer-events: none;
+  top: 0;
+  &__text {
+    font-weight: 900;
+  }
+}

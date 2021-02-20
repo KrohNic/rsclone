@@ -1,0 +1,13 @@
+.select_word {
+  @extend .middleBlock;
+
+  &--content {
+    @extend .middleBlock--block;
+  }
+
+  &--title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
